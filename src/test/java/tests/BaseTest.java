@@ -57,7 +57,7 @@ public class BaseTest {
     public void failTest() throws Exception {
         System.out.println("This test if failed");
         extentTest.fail("This test is failed");
-        throw new Exception("Exception from method");
+        //throw new Exception("Exception from method");
     }
 
     @Test
