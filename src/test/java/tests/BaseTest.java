@@ -30,12 +30,14 @@ public class BaseTest {
     @AfterMethod
     public void afterMethod(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.SUCCESS) {
-
+            extentTest.pass(result.getName() + " - Passed")
         } else if (result.getStatus() == ITestResult.FAILURE) {
             extentTest.addScreenCaptureFromPath("./screenshot.png", "Failed test screenshot for " + result.getName());
             extentTest.fail(result.getThrowable());
         } else if (result.getStatus() == ITestResult.SKIP) {
-
+            extentTest.skip(result.getName() + " - Skipped");
+        } else {
+            extentTest.error(result.getThrowable());
         }
     }
 
