@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 6, 2017 01:36:07 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 6, 2017 01:55:24 AM</span>
 				</a>
 			</li>
 			<li>
@@ -145,10 +145,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>1</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>3</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='25%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='33.333%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -163,51 +163,17 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
-					<div class='test-heading'>
-						<span class='test-name'>passTest</span>
-						<span class='test-time'>Oct 6, 2017 01:36:08 AM</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Oct 6, 2017 01:36:08 AM</span>
-	<span class='label end-time'>Oct 6, 2017 01:36:08 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>1:36:08 AM</td>
-					<td class='step-details'>This test is passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>failTest</span>
-						<span class='test-time'>Oct 6, 2017 01:36:08 AM</span>
+						<span class='test-time'>Oct 6, 2017 01:55:26 AM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 6, 2017 01:36:08 AM</span>
-	<span class='label end-time'>Oct 6, 2017 01:36:08 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
+	<span class='label start-time'>Oct 6, 2017 01:55:26 AM</span>
+	<span class='label end-time'>Oct 6, 2017 01:55:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+16ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -221,14 +187,14 @@
 			<tbody>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:36:08 AM</td>
+					<td class='timestamp'>1:55:26 AM</td>
 					<td class='step-details'>This test is failed</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>1:36:08 AM</td>
+					<td class='timestamp'>1:55:26 AM</td>
 					<td class='step-details'><pre>java.lang.Exception: Exception from method
-	at tests.BaseTest.failTest(BaseTest.java:58)
+	at tests.BaseTest.failTest(BaseTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -251,8 +217,18 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></td>
 				</tr>
 			</tbody>
@@ -265,17 +241,56 @@
 				</li>
 				
 				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>passTest</span>
+						<span class='test-time'>Oct 6, 2017 01:55:26 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 6, 2017 01:55:26 AM</span>
+	<span class='label end-time'>Oct 6, 2017 01:55:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:55:26 AM</td>
+					<td class='step-details'>This test is passed</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:55:26 AM</td>
+					<td class='step-details'>passTest - Passed</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>skipTest</span>
-						<span class='test-time'>Oct 6, 2017 01:36:08 AM</span>
+						<span class='test-time'>Oct 6, 2017 01:55:26 AM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 6, 2017 01:36:08 AM</span>
-	<span class='label end-time'>Oct 6, 2017 01:36:08 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
+	<span class='label start-time'>Oct 6, 2017 01:55:26 AM</span>
+	<span class='label end-time'>Oct 6, 2017 01:55:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -289,8 +304,13 @@
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>1:36:08 AM</td>
+					<td class='timestamp'>1:55:26 AM</td>
 					<td class='step-details'>This test is skipped</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>1:55:26 AM</td>
+					<td class='step-details'>skipTest - Passed</td>
 				</tr>
 			</tbody>
 		</table>
@@ -365,10 +385,10 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Oct 6, 2017 01:36:08 AM</td>
-                                                        <td class='linked' test-id='2'>failTest</td>
+                                                        <td>Oct 6, 2017 01:55:26 AM</td>
+                                                        <td class='linked' test-id='1'>failTest</td>
                                                         <td><pre><pre>java.lang.Exception: Exception from method
-	at tests.BaseTest.failTest(BaseTest.java:58)
+	at tests.BaseTest.failTest(BaseTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -391,8 +411,18 @@
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
 	at org.testng.TestNG.runSuites(TestNG.java:1144)
 	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
-	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -425,25 +455,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 6, 2017 01:36:07 AM</div>
+					<div class='panel-lead'>Oct 6, 2017 01:55:24 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 6, 2017 01:36:08 AM</div>
+			 		<div class='panel-lead'>Oct 6, 2017 01:55:26 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>453ms</div>
+					<div class='panel-lead'>2,500ms</div>
 				</div>
 			</div>
 		</div>
@@ -464,7 +494,7 @@
 				skipParent: 1,
 				exceptionsParent: 2,
 				
-				passChild: 1,
+				passChild: 3,
 				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
